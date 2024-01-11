@@ -9,9 +9,6 @@ const CreatePost = () => {
     const router = useRouter();
     const { data: session } = useSession();
 
-    if (!session?.user) return router.push("/")
-
-
     const [isSubmit, setIsSubmit] = useState(false);
     const [data, setPost] = useState({
         post: "",

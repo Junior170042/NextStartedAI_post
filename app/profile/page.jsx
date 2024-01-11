@@ -10,7 +10,6 @@ const MyProfile = ({ username, userId }) => {
     const { data: session } = useSession()
     const router = useRouter()
 
-    if (!session?.user) return router.push("/")
 
     useEffect(() => {
         const getPost = async () => {
